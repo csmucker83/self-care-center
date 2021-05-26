@@ -1,15 +1,32 @@
 html{
   height: 100%;
 }
+
 body {
   background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
 }
-.heading, .p{
+.heading, .radio-box{
   font-family: 'Quicksand', sans-serif;
   text-align: center;
-  font-color: #ffffff;
+  color: #ffffff;
 }
 
+div{
+  align-items: center;
+}
+
+button{
+  color: #134d71;
+}
+.icon{
+  margin: auto;
+  width: 200px;
+
+}
+
+.choose-message{
+  align-items: center;
+}
 /*font-family: 'Quicksand', sans-serif;
 COLORS
 light-yellow - #f7e4bf;
