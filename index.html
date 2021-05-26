@@ -10,16 +10,25 @@
         Self Care Center
       </h1>
     </section>
-        <p class="p">Which type of message?</p>
-        <<form action="choose-message"></form>
-          <input type="radio" id="affirmation" name="affirmation" value="affirmation">
-          <label for="affirmation">affirmation</label>
-          <br>
-          <input type="radio" id="mantra" name="mantra" value="mantra">
-          <label for="mantra">mantra</label>
-          <br><br>
-          <button id="show-message">Receive message</button>
+    <section>
+        <h4 class="radio-box">Which type of message?</h4>
+        <div class="choose-message">
+          <form action="choose-message"></form>
+            <input type="radio" id="affirmation" name="affirmation" value="affirmation">
+            <label for="affirmation">affirmation</label>
+            <br>
+            <input type="radio" id="mantra" name="mantra" value="mantra">
+            <label for="mantra">mantra</label>
+            <br><br>
+            <button id="show-message" class="button-design">Receive message</button>
+        </div>
+    </section>
+    <section>
       </form>
+      <form class="show-message">
+        <img src="./assets/meditate.svg" alt="" class="icon">
+      </form>
+    </section>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
