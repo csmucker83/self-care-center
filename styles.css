@@ -1,18 +1,33 @@
-html{
+html, body{
   height: 100%;
 }
-
+*{
+  font-family: "Quicksand", sans-serif;
+}
 body {
   background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
 }
 .heading, .radio-box{
-  font-family: 'Quicksand', sans-serif;
   text-align: center;
   color: #ffffff;
 }
 
+.message-block{
+  margin:;
+  justify-content: center;
+}
+
+.radio-box{
+  margin: 80px 5px 15px 10px;
+}
+.choose-message{
+  background-color: #ffffff;
+  border: 10px;
+}
+
 div{
   align-items: center;
+  position: relative;
 }
 
 button{
@@ -20,13 +35,17 @@ button{
 }
 .icon{
   margin: auto;
-  width: 200px;
+  width: 150px;
+}
+
+.receive-message{
+  justify-content: center;
+  background-color: #ffffff;
+  margin: auto;
 
 }
 
-.choose-message{
-  align-items: center;
-}
+
 /*font-family: 'Quicksand', sans-serif;
 COLORS
 light-yellow - #f7e4bf;
