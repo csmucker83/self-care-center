@@ -8,28 +8,31 @@
   <body class="body">
     <section>
       <h1 class="heading">
-        Self Care Center
+        ✨Self Care Center ✨
       </h1>
     </section>
-    <section>
-        <h4 class="radio-box">Which type of message?</h4>
-        <div class="choose-message" id=choose-message">
-          <form action="/action_page.php" class="message-block">
-            <input type="radio" id="mantra" name="care-choice" value="mantra" id="mantra">
+
+        <h4 class="radio-box" id="radio-box">Which type of message?</h4>
+        <div class="choose-message" id="choose-message">
+          <form class="message-block" id="message-block">
+
+            <input type="radio" name="care-choice" value="mantra" id="mantra">
             <label for="mantra">mantra</label>
-            <input type="radio" id="affirmation" name="care-choice" value="affirmation" id="affirmation">
+
+            <input type="radio" name="care-choice" value="affirmation" id="affirmation">
             <label for="affirmation">affirmation</label>
-        </form>
-        <button class="receive-message" id="receive-message">Receive Message</button>
+            <br></br>
+
+            <button class="receive-message" id="receive-message" type="submit">Receive Message</button>
+        </div>
+
+      <section class="display">
+        <section class="show-message" id="show-message">
+          <div class="message hidden" id="message"></div>
+          <img src="./assets/meditate.svg" alt="Self Care Image" class="icon" id="icon">
+        </section>
       </section>
-      <section>
-      </form>
-      <form class="show-message" id="show-message">
-        <img src="./assets/meditate.svg" alt="Self Care Image" class="icon">
-        <button class="clear" type="button" disabled>Clear</button>
-            <button class="view-favorites" type="button">View Favorites</button>
-      </form>
-      </section>
+
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

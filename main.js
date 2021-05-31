@@ -29,7 +29,34 @@ var mantras = [
   'The only constant is change.',
 ];
 
-var receiveMessage = document.querySelector("#receiveMessage");
-var affirmation = document.querySelector("#affirmation");
-var showMessage = querySelector("#show-message");
-var mantra = querySelector("#mantra");
+var mantra = document.querySelector("#mantra");
+var affirmation = document.querySelector('#affirmation');
+var radioBox = document.querySelector("#radio-box");
+var chooseMessage = document.querySelector("#choose-message");
+var messageBlock = document.querySelector("#message-block");
+var receiveMessageButton = document.querySelector("#receive-message");
+var showMessage = document.querySelector("#show-message");
+var iconImg = document.querySelector("#icon");
+var message = document.querySelector("#message");
+
+receiveMessageButton.addEventListener("click", messageReceive);
+
+function getRandomIndex(array) {
+  var min = Math.ceil(0);
+  var max = Math.floor(array.length);
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+
+function messageReceive(event) {
+  event.preventDefault();
+  iconImg.classList.add("hidden");
+  message.classList.remove("hidden");
+  if(mantra.checked) {
+    var i = getRandomIndex(mantras)
+    message.innerText = mantras[i];
+  } else {
+      var i = getRandomIndex(affirmations)
+      message.innerText = affirmations[i];
+  }
+}

@@ -1,9 +1,15 @@
 html, body{
   height: 100%;
-}
-*{
+  text-align: center;
   font-family: "Quicksand", sans-serif;
+  background-attachment: fixed;
 }
+
+.radio-box{
+  margin-top: 50px;
+  margin-bottom: 2px;
+}
+
 body {
   background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
 }
@@ -11,41 +17,62 @@ body {
   text-align: center;
   color: #ffffff;
 }
-
-.message-block{
-  margin:;
+ .heading{
+   padding-top: 40px;
+ }
+/*.message-block{
   justify-content: center;
-}
+}*/
 
 .radio-box{
   margin: 80px 5px 15px 10px;
 }
 .choose-message{
+  justify-content: center;
   background-color: #ffffff;
-  border: 10px;
+  padding: 15px;
+  margin: auto;
+  border-radius: 10px;
+  margin: 1% 35% 3% 35%;
+}
+
+.receive-message{
+  font: #ffffff;
 }
 
 div{
   align-items: center;
-  position: relative;
+
 }
 
 button{
-  color: #134d71;
-}
-.icon{
-  margin: auto;
-  width: 150px;
+  color: #ffffff;
+  background-color: #134d71;
 }
 
-.receive-message{
-  justify-content: center;
+.display {
   background-color: #ffffff;
-  margin: auto;
-
+  border-radius: 15px;
+  margin: 5% 20% 5% 20%;
+  height: 200px;
+  border: 100px;
 }
 
+.icon {
+  padding: 3%;
+  max-width: 12%;
+  height: auto;
+  margin-top: 3%;
+}
 
+.hidden{
+  display: none;
+}
+
+.message{
+  margin-top: 8%;
+  padding: 80px;
+}
 /*font-family: 'Quicksand', sans-serif;
 COLORS
 light-yellow - #f7e4bf;
